@@ -8,6 +8,8 @@ import Slider from '../components/sliders/slider';
 import NewsCard from '../components/card/newsCards/newsCard';
 import RecordCards from '../components/card/recordCard/recordCards';
 import { Link } from 'react-router-dom';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 const Home = () => {
     const NeuralData = [
@@ -20,8 +22,15 @@ const Home = () => {
         { name: 'Immunology Research', link: '/' },
     ]
 
+    const data = [
+        { name: "1" },
+        { name: "2" },
+        { name: "3" },
+        { name: "4" },
+        { name: "5" },
+    ]
     return (
-        <div className='grid mt-20'>
+        <div className='mt-20'>
             <div className=' grid gap-8 px-8 py-16'>
                 <h1 className='text-4xl lg:w-3/4'> <span className="font-black">Empowering</span> primary care professionals to seamlessly identify and engage with eligible patients for clinical trail opportunities.</h1>
                 <p className='text-gray-400'>Helping Patients access innovative clinical trials regardless of demographics, location, or venue of care thus advocating inclusion, equality and diversity.</p>
@@ -77,8 +86,8 @@ const Home = () => {
                 </div>
             </div>
             <Slider />
-            <div className="bg md:flex ps-8 py-28 text-white">
-                <div className="w-full md:w-1/2 lg:w-1/2 grid gap-8 py-16 pr-10">
+            <div className="lg:grid grid-cols-2 grid-flow-row bg md:flex ps-8 py-28 text-white">
+                <div className=" grid gap-8 py-16 pr-10">
                     <h1 className='text-4xl'><span className='font-black'>Solutions</span> Provided by Healthcare</h1>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
                     <div className='flex'>
@@ -106,29 +115,33 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full md:w-1/2 lg:w-1/2 ps-8 grid content-center gap-8 ">
-                    <div className="flex">
-                        <div className="rounded-xl bg-[#799EAE33] bg-opacity-20 flex-auto m-2 px-14 pt-28 pb-16 ">
-                            <h1 className='text-3xl'>Solutions for neural problems</h1>
-                            <p className='border-b-2 py-4'>There are many variations of passages of
-                                available, but the majority have suffered
-                                alteration in some form, injected humour,
-                                or randomised words which don't...</p>
-                            <div className="flex justify-end ">
-                                <button className='border-2 flex justify-items-end border-blue-100 p-4 mt-6 rounded-md'>Join Healthcare</button>
+                <div>
+                    <Carousel showArrows={false} autoPlay={true} interval={3000} showThumbs={false} infiniteLoop={true} stopOnHover={false} showStatus={false} showIndicators={false} centerMode={true} centerSlidePercentage={100} transitionTime={500} >
+                        {data.map((data, id) => (
+                            <div className="md:flex text-start">
+                                <div className="rounded-xl bg-[#799EAE33] bg-opacity-20 flex-auto m-2 px-8 pt-28 pb-16 ">
+                                    <h1 className='text-3xl'>Solutions for neural problems</h1>
+                                    <p className='border-b-2 py-4'>There are many variations of passages of
+                                        available, but the majority have suffered
+                                        alteration in some form, injected humour,
+                                        or randomised words which don't...</p>
+                                    <div className="flex justify-end ">
+                                        <button className='border-2 flex justify-items-end border-blue-100 p-4 mt-6 rounded-md'>Join Healthcare</button>
+                                    </div>
+                                </div>
+                                <div className="rounded-xl bg-[#799EAE33] bg-opacity-20 flex-auto m-2 px-8 pt-28 pb-16 ">
+                                    <h1 className='text-3xl'>Solutions for neural problems</h1>
+                                    <p className='border-b-2 py-4'>There are many variations of passages of
+                                        available, but the majority have suffered
+                                        alteration in some form, injected humour,
+                                        or randomised words which don't...</p>
+                                    <div className="flex justify-end ">
+                                        <button className='border-2 flex justify-items-end border-blue-100 p-4 mt-6 rounded-md'>Join Healthcare</button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="bg-[#799EAE33] bg-opacity-20 rounded-xl flex-auto m-2 px-14 pt-28 pb-16">
-                            <h1 className='text-3xl'>Solutions for neural problems</h1>
-                            <p className='border-b-2 py-4'>There are many variations of passages of
-                                available, but the majority have suffered
-                                alteration in some form, injected humour,
-                                or randomised words which don't...</p>
-                            <div className="flex justify-end">
-                                <button className='border-2 flex justify-items-end border-blue-100 p-4 mt-6 rounded-md'>Join Healthcare</button>
-                            </div>
-                        </div>
-                    </div>
+                        ))}
+                    </Carousel>
                 </div>
             </div>
             <div className='bg-gradient-to-t from-[#eff7fc] grid gap-8 px-8 py-20'>

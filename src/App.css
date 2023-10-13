@@ -31,7 +31,7 @@ body{
 /* Default styles */
 .custom-carousel .control-dots .dot.selected {
     background-color: black !important;
-    width: 55px;
+    width: 45px;
     height: px; /* You need to specify a height value here */
     border-radius: 40px;
 }
