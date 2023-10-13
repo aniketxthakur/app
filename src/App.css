@@ -1,0 +1,62 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+
+.bg{
+	background-image: url('C:\web dev\React\Z Tailwind\my-app\public\bg.jpg');
+	background-size: cover;
+}
+body{
+	font-family: 'Source Sans Pro';
+ }
+::-webkit-scrollbar {
+    width: 0em;
+ }
+/* ::-webkit-scrollbar-button {
+    background: #ccc
+}
+::-webkit-scrollbar-track-piece {
+    background: #888
+}
+::-webkit-scrollbar-thumb {
+    background: #eee
+}​ */
+
+
+
+/* Slider */
+/* Default styles */
+.custom-carousel .control-dots .dot.selected {
+    background-color: black !important;
+    width: 55px;
+    height: px; /* You need to specify a height value here */
+    border-radius: 40px;
+}
+
+.custom-carousel .control-dots {
+    bottom: unset;
+    top: 28%;
+    right: 15.5%;
+    margin-top: 10px;
+}
+
+.custom-carousel .control-dots .dot {
+    background-color: rgb(108, 107, 107) !important;
+}
+
+ /* @media (max-width: 768px) {
+    .custom-carousel .control-dots {
+        top: 20%;
+        right: 0%;
+     }
+}
+
+ @media (max-width: 480px) {
+    .custom-carousel .control-dots {
+        top: 10%;
+        right: 5%;
+    }
+} */
