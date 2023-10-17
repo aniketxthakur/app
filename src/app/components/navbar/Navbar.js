@@ -5,6 +5,7 @@ import { IoIosMenu } from 'react-icons/io';
 import logo from './logo.svg';
 import { Link } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
+import DefaultButton from '../buttons/defaultButton';
 
 const Navbar = () => {
     const [toggleNavbar, setToggleNavbar] = useState(false);
@@ -12,7 +13,6 @@ const Navbar = () => {
     const handleNavbar = () => {
         setToggleNavbar(!toggleNavbar);
     };
-
     const navbarData = [
         { name: 'Home', link: '/' },
         { name: 'About Us', link: '/about' },
@@ -22,7 +22,7 @@ const Navbar = () => {
     ];
     return (
         <>
-            <div className="flex ">
+            <div className="flex">
                 <div className="flex fixed z-50 w-full px-8 lg:p-2 pt-2 lg:text-base text-xs text-white bg-[#0e202a]">
                     <div className="flex-auto flex justify-start">
                         <p className='border-r pr-5'> HealthCare Global</p>
@@ -63,7 +63,7 @@ const Navbar = () => {
                             </ul>
                         </div>
                         {/* button */}
-                        <button className='border-2 text-xl py-4 px-5 rounded-md border-blue-100 lg:block hidden'>Join Healthcare</button>
+                            <button className='border-2 text-xl py-4 px-5 rounded-md border-blue-100 lg:block hidden'>Join Healthcare</button>
                     </div>
                 </nav>
             </div>

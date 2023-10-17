@@ -10,6 +10,7 @@ import RecordCards from '../components/card/recordCard/recordCards';
 import { Link } from 'react-router-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import DefaultButton from '../components/buttons/defaultButton';
 
 const Home = () => {
     const NeuralData = [
@@ -21,13 +22,8 @@ const Home = () => {
         { name: 'Immunology Research', link: '/' },
         { name: 'Immunology Research', link: '/' },
     ]
-
     const data = [
-        { name: "1" },
-        { name: "2" },
-        { name: "3" },
-        { name: "4" },
-        { name: "5" },
+        { name:'Solutions for neural problems', para:'There are many variations of passages of available, but the majority have suffered alteration in some form, injected humour, or randomised words which dont...' },
     ]
     return (
         <div className='mt-20'>
@@ -118,25 +114,19 @@ const Home = () => {
                 <div>
                     <Carousel showArrows={false} autoPlay={true} interval={3000} showThumbs={false} infiniteLoop={true} stopOnHover={false} showStatus={false} showIndicators={false} centerMode={true} centerSlidePercentage={100} transitionTime={500} >
                         {data.map((data, id) => (
-                            <div className="md:flex text-start">
+                            <div key={id} className="md:flex text-start">
                                 <div className="rounded-xl bg-[#799EAE33] bg-opacity-20 flex-auto m-2 px-8 pt-28 pb-16 ">
-                                    <h1 className='text-3xl'>Solutions for neural problems</h1>
-                                    <p className='border-b-2 py-4'>There are many variations of passages of
-                                        available, but the majority have suffered
-                                        alteration in some form, injected humour,
-                                        or randomised words which don't...</p>
-                                    <div className="flex justify-end ">
-                                        <button className='border-2 flex justify-items-end border-blue-100 p-4 mt-6 rounded-md'>Join Healthcare</button>
+                                    <h1 className='text-3xl'>{data.name}</h1>
+                                    <p className='border-b-2 py-4'>{data.para}</p>
+                                    <div className='flex justify-end'>
+                                    <DefaultButton name='Join Healthcare' />
                                     </div>
                                 </div>
                                 <div className="rounded-xl bg-[#799EAE33] bg-opacity-20 flex-auto m-2 px-8 pt-28 pb-16 ">
-                                    <h1 className='text-3xl'>Solutions for neural problems</h1>
-                                    <p className='border-b-2 py-4'>There are many variations of passages of
-                                        available, but the majority have suffered
-                                        alteration in some form, injected humour,
-                                        or randomised words which don't...</p>
-                                    <div className="flex justify-end ">
-                                        <button className='border-2 flex justify-items-end border-blue-100 p-4 mt-6 rounded-md'>Join Healthcare</button>
+                                    <h1 className='text-3xl'>{data.name}</h1>
+                                    <p className='border-b-2 py-4'>{data.para}</p>
+                                    <div className='flex justify-end'>
+                                        <DefaultButton name='Join Healthcare'/>
                                     </div>
                                 </div>
                             </div>
@@ -146,14 +136,14 @@ const Home = () => {
             </div>
             <div className='bg-gradient-to-t from-[#eff7fc] grid gap-8 px-8 py-20'>
                 <p className='font-black border-b-2 pb-4'>HOW WE DO</p>
-                <h1 className='text-4xl lg:w-3/4'> <span className="font-black">Variations </span>of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</h1>
-                <div className="flex flex-wrap">
+                <h1 className='text-4xl lg:w-3/4'> <span className='font-black'>Variations </span>of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</h1>
+                <div className='flex flex-wrap'>
                     <Cards />
                 </div>
             </div>
             <div className='grid gap-8 px-8 py-20'>
                 <p className='font-black border-b-2 pb-4'>WHAT'S NEW</p>
-                <h1 className='text-4xl'> <span className="font-black">NEWS & </span>Stories</h1>
+                <h1 className='text-4xl'> <span className='font-black'>NEWS & </span>Stories</h1>
                 <NewsCard />
             </div>
         </div>
