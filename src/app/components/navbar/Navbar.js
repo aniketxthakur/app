@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
+import React,{useState} from 'react'
 import { FaGlobeAmericas } from 'react-icons/fa';
-import { RiArrowDropDownLine } from 'react-icons/ri';
 import { IoIosMenu } from 'react-icons/io';
 import logo from './logo.svg';
 import { Link } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
-import DefaultButton from '../buttons/defaultButton';
+import Dropdown from '../dropdown/dropdown';
 
 const Navbar = () => {
     const [toggleNavbar, setToggleNavbar] = useState(false);
@@ -29,7 +28,7 @@ const Navbar = () => {
                         <div className="flex ps-5">
                             <p className='pt-1 pr-1'><FaGlobeAmericas /></p>
                             <p>EN</p>
-                            <p className='text-2xl'><RiArrowDropDownLine /></p>
+                            <Dropdown/>
                         </div>
                     </div>
                     <div className="flex-auto flex justify-end">
@@ -63,7 +62,7 @@ const Navbar = () => {
                             </ul>
                         </div>
                         {/* button */}
-                            <button className='border-2 text-xl py-4 px-5 rounded-md border-blue-100 lg:block hidden'>Join Healthcare</button>
+                        <button className='border-2 text-xl py-4 px-5 rounded-md border-blue-100 lg:block hidden'>Join Healthcare</button>
                     </div>
                 </nav>
             </div>
