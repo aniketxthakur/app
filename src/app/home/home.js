@@ -24,6 +24,13 @@ const Home = () => {
     ]
     const data = [
         { name:'Solutions for neural problems', para:'There are many variations of passages of available, but the majority have suffered alteration in some form, injected humour, or randomised words which dont...' },
+        { name:'Solutions for neural problems', para:'There are many variations of passages of available, but the majority have suffered alteration in some form, injected humour, or randomised words which dont...' },
+        { name:'Solutions for neural problems', para:'There are many variations of passages of available, but the majority have suffered alteration in some form, injected humour, or randomised words which dont...' },
+        { name:'Solutions for neural problems', para:'There are many variations of passages of available, but the majority have suffered alteration in some form, injected humour, or randomised words which dont...' },
+        { name:'Solutions for neural problems', para:'There are many variations of passages of available, but the majority have suffered alteration in some form, injected humour, or randomised words which dont...' },
+        { name:'Solutions for neural problems', para:'There are many variations of passages of available, but the majority have suffered alteration in some form, injected humour, or randomised words which dont...' },
+        { name:'Solutions for neural problems', para:'There are many variations of passages of available, but the majority have suffered alteration in some form, injected humour, or randomised words which dont...' },
+        { name:'Solutions for neural problems', para:'There are many variations of passages of available, but the majority have suffered alteration in some form, injected humour, or randomised words which dont...' },
     ]
     return (
         <div className='mt-20'>
