@@ -6,7 +6,7 @@ import doctor from './doctor.svg';
 import icon from './icon.svg';
 
 
-const Slider = () => {
+const Comment = () => {
     const data = [
         { icon: <RiDoubleQuotesL />, para: 'Doctus propriae erroribus an eam, mel agam modus civibus, vim solet dissentiet cu velit sanctus mei', name: 'Jhon Doe', role: 'PRINCIPAL SCIENTIST, TRANSLATIONAL BIOLOGY' },
         { icon: <RiDoubleQuotesL />, para: 'Doctus propriae erroribus an eam, mel agam modus civibus, vim solet dissentiet cu velit sanctus mei', name: 'Jhon Doe', role: 'PRINCIPAL SCIENTIST, TRANSLATIONAL BIOLOGY' },
@@ -39,4 +39,4 @@ const Slider = () => {
     )
 }
 
-export default Slider
+export default Comment

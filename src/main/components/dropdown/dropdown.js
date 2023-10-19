@@ -34,7 +34,7 @@ const Dropdown = () => {
             </button>
             <div ref={dropdownRef} className={`z-10 bg-white absolute divide-y divide-gray-800 rounded-lg w-44 ${showDropdown ? '' : 'hidden'}`}>
                 {showDropdown && (
-                    <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
+                    <ul className="py-2 text-sm text-gray-700 ">
                         {
                             languages.map((data, id) => {
                                 return (

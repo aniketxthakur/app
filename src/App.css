@@ -1,17 +1,12 @@
+body{
+    font-family: 'Source Sans Pro';
+ }
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
 
-
-.bg{
-	background-image: url('C:\web dev\React\Z Tailwind\my-app\public\bg.jpg');
-	background-size: cover;
-}
-body{
-	font-family: 'Source Sans Pro';
- }
 ::-webkit-scrollbar {
     width: 0em;
  }
@@ -24,8 +19,6 @@ body{
 ::-webkit-scrollbar-thumb {
     background: #eee
 }​ */
-
-
 
 /* Slider */
 /* Default styles */

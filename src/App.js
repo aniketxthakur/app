@@ -1,21 +1,41 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from './app/components/navbar/Navbar';
-import Home from './app/home/home';
-import About from './app/about/about';
-
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Home from './main/home/home';
+import Login from './auth/login/login';
+import Dashboard from './dashboard/home/dashboard';
+import MainRoute from './routes/mainroute';
+import Authroute from './routes/authroute';
+import DashboardRoute from './routes/dashboardRoute';
 
 function App() {
   return (
-   <div className='scroller'>
-     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About/>} />
-      </Routes>
-    </BrowserRouter>
-   </div>
+    <div className='scroller'>
+      <BrowserRouter>
+        {/* <Routes>
+          <Route element={<MainRoute />}>
+            <Route path='/' element={<Home />} />
+          </Route>
+          <Route element={<Authroute />}>
+            <Route path='/login' element={<Login />} />
+          </Route>
+          <Route element={<DashboardRoute />}>
+            <Route path='/dashboard' element={<Dashboard />} />
+          </Route>
+        </Routes> */}
+
+        <Routes>
+          <Route path="/" element={<MainRoute />}>
+            <Route index element={<Home />} />
+            <Route  element={<Authroute />}>
+              <Route path="/auth" element={<Login />} />
+            </Route>
+            <Route element={<DashboardRoute />}>
+              <Route path="/dashboard" element={<Dashboard />} />
+            </Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 export default App;

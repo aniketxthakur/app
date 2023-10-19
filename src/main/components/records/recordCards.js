@@ -8,5 +8,4 @@ const RecordCards = (props) => {
         </div>
     )
 }
-
 export default RecordCards

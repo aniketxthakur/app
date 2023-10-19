@@ -2,9 +2,9 @@ import React,{useState} from 'react'
 import { FaGlobeAmericas } from 'react-icons/fa';
 import { IoIosMenu } from 'react-icons/io';
 import logo from './logo.svg';
-import { Link } from 'react-router-dom';
-import { useLocation } from "react-router-dom";
+ import { useLocation } from "react-router-dom";
 import Dropdown from '../dropdown/dropdown';
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
     const [toggleNavbar, setToggleNavbar] = useState(false);
@@ -13,11 +13,11 @@ const Navbar = () => {
         setToggleNavbar(!toggleNavbar);
     };
     const navbarData = [
-        { name: 'Home', link: '/' },
-        { name: 'About Us', link: '/about' },
-        { name: 'Solutions', link: '' },
-        { name: 'Blogs', link: '' },
-        { name: 'Contact Us', link: '' },
+        { name: 'Home', link: '/#home' },
+        { name: 'About Us', link: '/#about' },
+        { name: 'Solutions', link: '/#solution' },
+        { name: 'Blogs', link: '/#blogs' },
+        { name: 'Contact Us', link: '#contact' },
     ];
     return (
         <>
@@ -49,20 +49,20 @@ const Navbar = () => {
                             <ul className="flex md:flex-row flex-col p-3 font-medium md:space-x-8 border rounded-md md:border-0">
                                 {navbarData.map((data, id) => (
                                     <li key={id}>
-                                        <Link
+                                        <HashLink smooth
                                             to={data.link}
                                             className={`${pathname === data.link ? 'border-blue-200 border-b-2 font-bold' : ''
-                                                } block text-xl py-2 px-4 md:p-0 w-auto text-[#0e202a]`}
+                                                } block text-xl py-2 px-4 md:p-0 w-auto text-[#0e202a] hover:text-blue-400`}
                                             aria-current={pathname === data.link ? 'page' : null}
                                         >
                                             {data.name}
-                                        </Link>
+                                        </HashLink>
                                     </li>
                                 ))}
                             </ul>
                         </div>
                         {/* button */}
-                        <button className='border-2 text-xl py-4 px-5 rounded-md border-blue-100 lg:block hidden'>Join Healthcare</button>
+                        <button className='border-2 text-xl py-4 px-5 rounded-md border-blue-100 lg:block hidden hover:border-black'>Join Healthcare</button>
                     </div>
                 </nav>
             </div>
