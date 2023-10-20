@@ -26,11 +26,11 @@ const RecentTrails = () => {
             <div className='flex pt-4 text-gray-500 text-lg'>
                 <div className='flex-auto py-5'>
                     <div className='grid gap-4 '>
-                        <h1 className='text-3xl font-medium   border-b-2 pb-4 text-black'>Neural Research</h1>
+                        <h1 className='text-3xl font-medium border-b-2 pb-4 text-black'>Neural Research</h1>
                         {
                             NeuralData.map((data, id) => {
                                 return (
-                                    <Link key={id} to={data.link} className='flex'><span className='px-2 pt-1 text-gray-00'><FaBacterium /></span>{data.name}</Link>
+                                    <Link key={id} to={data.link} className='flex hover:font-bold'><span className='px-2 pt-1 '><FaBacterium /></span>{data.name}</Link>
                                 )
                             })
                         }
@@ -42,14 +42,14 @@ const RecentTrails = () => {
                         {
                             MedicalData.map((data, id) => {
                                 return (
-                                    <Link key={id} to={data.link} className='flex '><span className='px-2 pt-1'><FaBacterium /></span>{data.name}</Link>
+                                    <Link key={id} to={data.link} className='flex hover:font-bold'><span className='px-2 pt-1'><FaBacterium /></span>{data.name}</Link>
                                 )
                             })
                         }
                     </div>
                 </div>
             </div>
-            <a href='/' className='text-xl font-semibold'>READ MORE ABOUT TRAILS </a>
+            <Link to='/' className='text-xl font-semibold'>READ MORE ABOUT TRAILS </Link>
         </div>
     </div>
 </div>

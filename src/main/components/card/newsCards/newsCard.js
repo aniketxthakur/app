@@ -24,8 +24,8 @@ const NewsCard = () => {
                   <img className="w-full rounded-xl" src={data.img} alt="cardimg" />
                   <div className="bg-white py-6 grid gap-6 hover:shadow-[rgba(0,0,0,0.1)_5px_10px_10px_0px]">
                     <div className='flex text-white'>
-                      <button className="bg-[#aab6e0] rounded-3xl px-4 py-1 mr-3">News</button>
-                      <button className="bg-[#80cfb3] rounded-3xl px-4 py-1">Science</button>
+                      <button className="bg-[#aab6e0] rounded-3xl px-4 py-1 mr-3 hover:bg-[#748CDE]">News</button>
+                      <button className="bg-[#80cfb3] rounded-3xl px-4 py-1 hover:bg-[#26c98f]">Science</button>
                     </div>
                     <div className="font-bold text-xl">{data.heading}</div>
                     <div className="flex">

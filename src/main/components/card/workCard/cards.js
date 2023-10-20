@@ -4,6 +4,7 @@ import B from './B.svg';
 import C from './C.svg';
 import D from './D.svg';
 import E from './E.svg';
+import { Link } from 'react-router-dom';
 
 
 const whatWeDoCard = () => {
@@ -30,7 +31,7 @@ const whatWeDoCard = () => {
                                             <img src={data.img} alt="cardimg" />
                                             <p>{data.heading}</p>
                                             <p className='text-lg font-light'>{data.para}</p>
-                                            <a href='/' className='text-lg' >*Read More</a>
+                                            <Link to='/' className='text-lg' >*Read More</Link>
                                         </div>
                                     </div>
                                 </div>

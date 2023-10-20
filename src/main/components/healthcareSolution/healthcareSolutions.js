@@ -36,7 +36,7 @@ const HealthcareSolutions = () => {
                                 {
                                     NeuralData.map((data, id) => {
                                         return (
-                                            <Link key={id} to={data.link} className='flex '><span className='px-2 pt-1'><FaBacterium /></span>{data.name}</Link>
+                                            <Link key={id} to={data.link} className='flex hover:text-gray-400'><span className='px-2 pt-1'><FaBacterium /></span>{data.name}</Link>
                                         )
                                     })
                                 }
@@ -47,7 +47,7 @@ const HealthcareSolutions = () => {
                                 {
                                     MedicalData.map((data, id) => {
                                         return (
-                                            <Link key={id} to={data.link} className='flex '><span className='px-2 pt-1'><FaBacterium /></span>{data.name}</Link>
+                                            <Link key={id} to={data.link} className='flex hover:text-gray-400'><span className='px-2 pt-1'><FaBacterium /></span>{data.name}</Link>
                                         )
                                     })
                                 }
