@@ -4,7 +4,7 @@ import Navbar from '../dashboard/components/navbar/navbar'
 
 const DashboardRoute = () => {
   return (
-    <div className='mt-40'>
+    <div >
       <Navbar/>
     <Outlet/>
     </div>

@@ -1,25 +1,24 @@
 import React from 'react'
-import Cards from '../components/card/workCard/cards';
-import NewsCard from '../components/card/newsCards/newsCard';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import HealthcareSolutions from '../components/healthcareSolution/healthcareSolutions';
-import Comment from '../components/comments/comment';
-import RecentTrails from '../components/recentTrail/recentTrails';
-import WhatWeDo from '../components/whatWeDo/whatWeDo';
-import AllRecord from '../components/records/record';
+import HeroSection from './components/heroSection/heroSection'
+import WhyChooseUs from './components/whyChooseUs/whyChooseUs'
+import Testimonials from './components/testimonials/testimonials'
+import WhatMakeUsDifferent from './components/whatMakeUsDifferent/whatMakeUsDifferent'
+import Article from './components/article/article'
+import FAQS from './components/FAQ/faq'
+import OurCommunity from './components/joinOurCommunity/ourCommunity'
 
 const Home = () => {
 
     return (
-        <div className='mt-20'>
-            <AllRecord />
-            <WhatWeDo />
-            <RecentTrails />
-            <Comment />
-            <HealthcareSolutions />
-            <Cards />
-            <NewsCard />
-        </div>
+        <div className='grid md:gap-28 gap-10 ' >
+            <HeroSection/>
+            <WhyChooseUs/>
+            <Testimonials/>
+            <WhatMakeUsDifferent/>
+            <Article/>
+            <FAQS/>
+            <OurCommunity/>
+          </div>
     )
 }
 

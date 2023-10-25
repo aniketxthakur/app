@@ -1,6 +1,6 @@
 body{
-    font-family: 'Source Sans Pro';
- }
+    font-family: 'Barlow Semi Condensed';
+  }
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
@@ -32,8 +32,7 @@ body{
 .custom-carousel .control-dots {
     bottom: unset;
     top: 28%;
-    right: 15.5%;
-    margin-top: 10px;
+     margin-top: 100px;
 }
 
 .custom-carousel .control-dots .dot {

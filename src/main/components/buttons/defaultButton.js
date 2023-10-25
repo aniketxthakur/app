@@ -2,7 +2,7 @@ import React from 'react'
 
 const DefaultButton = (props) => {
     return (
-        <button className='border-2 flex justify-items-end border-blue-100 p-4 mt-6 hover:border-black rounded-md'>{props.name}</button>
+        <button className={`mx-auto rounded-md ${props.class}`}>{props.name}</button>
     )
 }
 

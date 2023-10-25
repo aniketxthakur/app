@@ -11,7 +11,7 @@ function App() {
   return (
     <div className='scroller'>
       <BrowserRouter>
-        {/* <Routes>
+        <Routes>
           <Route element={<MainRoute />}>
             <Route path='/' element={<Home />} />
           </Route>
@@ -20,18 +20,6 @@ function App() {
           </Route>
           <Route element={<DashboardRoute />}>
             <Route path='/dashboard' element={<Dashboard />} />
-          </Route>
-        </Routes> */}
-
-        <Routes>
-          <Route path="/" element={<MainRoute />}>
-            <Route index element={<Home />} />
-            <Route  element={<Authroute />}>
-              <Route path="/auth" element={<Login />} />
-            </Route>
-            <Route element={<DashboardRoute />}>
-              <Route path="/dashboard" element={<Dashboard />} />
-            </Route>
           </Route>
         </Routes>
       </BrowserRouter>
