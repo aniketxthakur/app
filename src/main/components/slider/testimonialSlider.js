@@ -1,6 +1,6 @@
 import React from 'react'
-import star from './star.svg'
-import Testimonial from './Testimonial.svg'
+import star from '../../../assets/icons/star.svg'
+import Testimonial from '../../../assets/images/Testimonial.svg'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 

@@ -1,14 +1,14 @@
 import React from 'react';
-import first from './first.svg';
-import second from './second.svg';
-import third from './third.svg';
+import diffA from '.././../../../assets/images/diffA.svg';
+import diffB from '.././../../../assets/images/diffB.svg';
+import diffC from '.././../../../assets/images/diffC.svg';
 import { Link } from 'react-router-dom';
 
 const HeroSectionCard = () => {
   const CardData = [
-    { img: first, title: 'Clinicians', bgg:'hover:border-[#6ed8a1]', para: 'Empowering you to connect your patients, improve patient care through clinical trials and expand the range of healthcare experiences and choices available.', bg: 'text-[#6ed8a1]' },
-    { img: second, title: 'Patients',  bgg:'hover:border-[#63d7fb]', para: 'Empower yourself in your healthcare decisions with direct access to clinical trials.', bg: 'text-[#63d7fb]' },
-    { img: third, title: 'Sponsors', bgg:'hover:border-[#050f4e]', para: 'Expanding your clinical trials reach, boosting recruitment and embracing diversity for inclusive research.', bg: 'text-[#050f4e]', },
+    { img: diffA, title: 'Clinicians', bgg:'hover:border-[#6ed8a1]', para: 'Empowering you to connect your patients, improve patient care through clinical trials and expand the range of healthcare experiences and choices available.', bg: 'text-[#6ed8a1]' },
+    { img: diffB, title: 'Patients',  bgg:'hover:border-[#63d7fb]', para: 'Empower yourself in your healthcare decisions with direct access to clinical trials.', bg: 'text-[#63d7fb]' },
+    { img: diffC, title: 'Sponsors', bgg:'hover:border-[#050f4e]', para: 'Expanding your clinical trials reach, boosting recruitment and embracing diversity for inclusive research.', bg: 'text-[#050f4e]', },
   ];
   return (
     <div className='flex flex-wrap md:px-20 md:pt-8'>

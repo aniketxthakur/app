@@ -1,5 +1,5 @@
 import React from 'react'
-import Vector from './Vector.svg';
+import Vector from '../../../../assets/images/Vector.svg';
 import DefaultButton from '../../../components/buttons/defaultButton';
 import HeroSectionCard from '../../../components/cards/heroSectionCard/heroSectionCard';
 

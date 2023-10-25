@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { IoIosMenu } from 'react-icons/io';
-import logo from './logo.svg';
-import Vector from './Vector.svg';
+import logo from '../../../assets/icons/logo.svg';
+import NavBg from '../../../assets/images/NavBg.svg';
 import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
         { name: 'Contact Us', link: '#contact' },
     ];
     return (
-         <nav style={{ backgroundImage: `url(${Vector})` , backgroundSize:'cover'}} className="fixed z-20 w-full px-5 text-white text-lg">
+         <nav style={{ backgroundImage: `url(${NavBg})` , backgroundSize:'cover'}} className="fixed z-20 w-full px-5 text-white text-lg">
             <div className="w-full flex flex-wrap justify-between md:justify-center mx-auto py-5">
                 <img className='md:hidden block' src={logo} alt="logo" />
                 <button onClick={handleNavbar} data-collapse-toggle="navbar-sticky" type="button" className="text-3xl md:hidden grid content-start" aria-controls="navbar-sticky" aria-expanded="false"><IoIosMenu /></button>

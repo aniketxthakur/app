@@ -1,6 +1,6 @@
 import React from 'react'
-import first from './first.svg'
-import second from './second.svg'
+import customerSatisfaction from '../../../../assets/images/customerSatisfaction.svg'
+import increasedRevenue from '../../../../assets/images/increasedRevenue.svg'
 import TestimonialSlider from '../../../components/slider/testimonialSlider'
 
 
@@ -13,10 +13,10 @@ const Testimonials = () => {
           <p className='text-3xl text-gray-400'>SAVE TIME AND MONEY</p>
           <p className='md:text-5xl text-xl'>Find My Trials reduce expenses, accelerate research, and yield quicker advancements, ultimately saving both time and money.</p>
         </div>
-        <div className="sm:w-full mx-auto  md:w-1/2">
+        <div className="sm:w-full mx-auto md:w-1/2">
           <div className="md:flex  md:justify-end md:p-0 pt-8">
-            <img className='md:h-56' src={first} alt="" />
-            <img className='md:h-56 md:ps-40' src={second} alt="" />
+            <img className='md:h-56' src={customerSatisfaction} alt="" />
+            <img className='md:h-56 md:ps-40' src={increasedRevenue} alt="" />
           </div>
         </div>
       </div>

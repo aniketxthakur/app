@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SearchInput from '../../../components/input/searchInput';
-import FAQimg from './FAQimg.svg'
+import FAQimg from '../../../../assets/images/FAQimg.svg'
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import DefaultButton from '../../../components/buttons/defaultButton';
 

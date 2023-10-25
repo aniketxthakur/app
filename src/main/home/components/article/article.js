@@ -1,5 +1,5 @@
 import React from 'react'
-import articles from './articles.svg'
+import articles from '../../../../assets/images/articles.svg'
 import DefaultButton from '../../../components/buttons/defaultButton'
 
 const Article = () => {

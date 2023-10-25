@@ -1,5 +1,5 @@
 import React from 'react'
-import bg from './bg.svg'
+import bg from '../../../../assets/images/bg.svg'
 import DefaultButton from '../../../components/buttons/defaultButton'
 
 const OurCommunity = () => {

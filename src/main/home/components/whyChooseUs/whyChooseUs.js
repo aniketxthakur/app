@@ -1,6 +1,6 @@
 import React from 'react'
-import img from './img.svg'
-import check from './check.svg'
+import chooseimg from '../../../../assets/images/chooseimg.svg'
+import checkicon from '../../../../assets/icons/checkicon.svg'
 import DefaultButton from '../../../components/buttons/defaultButton'
 
 const WhyChooseUs = () => {
@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
                 <p className='md:text-5xl text-xl md:px-40 text-[#050f4e]'>We helping patients access innovative clinical trials regardless of demographics, location, or venue of care thus advocating inclusion, equality and diversity.</p>
                 <div className="text-start flex flex-wrap md:mt-20">
                     <div className="w-full md:w-1/2">
-                        <img className=' md:pr-20' src={img} alt="" />
+                        <img className=' md:pr-20' src={chooseimg} alt="" />
                     </div>
                     <div className="w-full md:w-1/2 text-xl font-light py-8">
                         <p className="text-3xl text-[#050f4e] font-bold pb-4">Promoting Inclusion and Equality:</p>
@@ -24,7 +24,7 @@ const WhyChooseUs = () => {
                         {
                             promotingData.map((data, id) => {
                                 return (
-                                    <div key={id} className='flex pb-4'> <img src={check} alt="" /> <span className='ps-4'>{data.para}</span></div>
+                                    <div key={id} className='flex pb-4'> <img src={checkicon} alt="" /> <span className='ps-4'>{data.para}</span></div>
                                 )
                             })
                         }

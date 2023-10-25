@@ -1,16 +1,16 @@
 import React from 'react';
-import first from './first.svg';
-import second from './second.svg';
-import third from './third.svg';
-import firsticon from './firsticon.svg';
-import secondicon from './secondicon.svg';
-import thirdicon from './thirdicon.svg';
+import diffbgA from '../../../../assets/images/difbgA.svg';
+import diffbgB from '../../../../assets/images/difbgB.svg';
+import diffbgC from '../../../../assets/images/difbgC.svg';
+import firsticon from '../../../../assets/icons/firsticon.svg';
+import secondicon from '../../../../assets/icons/secondicon.svg';
+import thirdicon from '../../../../assets/icons/thirdicon.svg';
 
 const MakeUsDifferentCard = () => {
   const CardData = [
-    { bg: first, img: firsticon, para: 'Enhancing Clinical Trails Access' },
-    { bg: second, img: secondicon, para: 'Promoting Inclusion and Equality', color: 'text-white' },
-    { bg: third, img: thirdicon, para: 'Fostering Equitable Healthcare' },
+    { bg: diffbgA, img: firsticon, para: 'Enhancing Clinical Trails Access' },
+    { bg: diffbgB, img: secondicon, para: 'Promoting Inclusion and Equality', color: 'text-white' },
+    { bg: diffbgC, img: thirdicon, para: 'Fostering Equitable Healthcare' },
   ];
 
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import footerimg from "./footerimg.svg";
+import footerimg from "../../../assets/icons/footerimg.svg";
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
