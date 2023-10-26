@@ -5,7 +5,7 @@ import Footer from '../main/components/footer.js/footer'
 
 const MainRoute = ({children}) => {
   return (
-    <div className='grid'>
+    <div className='grid '>
       <Navbar/>
       <Outlet/>
       <Footer/>

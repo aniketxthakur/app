@@ -26,7 +26,7 @@ function FaqComponent() {
             <div className='text-center font-bold grid gap-8'>
                 <p className='text-3xl text-gray-400'>HAVE ANY QUESTION?</p>
                 <p className='md:text-5xl text-xl md:px-40 text-[#050f4e]'>Frequently Asked Questions</p>
-                <SearchInput />
+                <SearchInput placeHolder='Search service you need...' />
                 {/* FAQ */}
                 {faqSections.map((section) => (
                     <div onClick={() => toggleContent(section.id)} key={section.id} className='cursor-pointer text-start p-8 border-2 rounded-lg md:text-3xl text-xl'>
@@ -54,5 +54,4 @@ function FaqComponent() {
         </div>
     );
 }
-
 export default FaqComponent;

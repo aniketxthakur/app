@@ -5,7 +5,7 @@ import HeroSectionCard from '../../../components/cards/heroSectionCard/heroSecti
 
 const HeroSection = () => {
     return (
-        <div id='home' className='md:pt-36 pt-16 text-white bg-no-repeat bg-auto md:bg-contain' style={{ backgroundImage: `url(${Vector})`}} >
+        <div id='home' className=' md:pt-36 pt-16 text-white bg-no-repeat bg-auto md:bg-contain' style={{ backgroundImage: `url(${Vector})`}} >
             <div className='text-center px-3 py-10 md:w-[800px] mx-auto grid gap-5'>
                 <h1 className='leading-none md:text-[83px] text-[40px] font-semibold'>Access Innovative Healthcare</h1>
                 <p className='md:text-[28px] text-[20px]'>Empowering primary care professionals to seamlessly identify and engage with eligible patients for clinical trail opportunities.</p>
@@ -15,7 +15,5 @@ const HeroSection = () => {
             <HeroSectionCard />
         </div>
     )
-
 }
-
 export default HeroSection
