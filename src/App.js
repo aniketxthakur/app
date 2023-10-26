@@ -9,8 +9,7 @@ import DashboardRoute from './routes/dashboardRoute';
 
 function App() {
   return (
-    <div className='scroller'>
-      <BrowserRouter>
+       <BrowserRouter>
         <Routes>
           <Route element={<MainRoute />}>
             <Route path='/' element={<Home />} />
@@ -23,7 +22,6 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </div>
-  );
+   );
 }
 export default App;
