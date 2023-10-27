@@ -10,7 +10,7 @@ const Article = () => {
                     <p className='text-gray-400 pb-4 '>ARTICLE</p>
                     <p className='md:text-5xl text-xl text-[#050f4e] py-6'>The Benefits Of Digital Sequence Information In Biological Research.</p>
                     <p>By Matthew Schwartz, Founder & Executive Director</p>
-                    <DefaultButton name='Read More' class='transition duration-300 ease-in-out hover:scale-110 text-white bg-[#050f4e] py-4 px-8 text-xl font-normal mt-4' />
+                    <DefaultButton name='Read More' className='transition duration-300 ease-in-out hover:scale-110 text-white bg-[#050f4e] py-4 px-8 text-xl font-normal mt-8 md:mt-14' />
                 </div>
                 <div className="w-full lg:w-1/2 font-bold lg:py-20 lg:pr-20 lg:ps-10">
                     <img className='w-full' src={articles} alt="" />

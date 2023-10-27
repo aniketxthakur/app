@@ -49,7 +49,7 @@ const Footer = () => {
                     <h1 className='font-semibold text-3xl text-[#050f4e]'>Our Newsletter</h1>
                     <p>Subscribe to our newsletter to get <br />updates about trails.</p>
                     <div className='md:flex'>
-                        <input type="text" id="first_name" class="bg-gray-100 placeholder:text-black text-lg md:rounded-s-lg block w-full p-2.5" placeholder="Enter email address..." required />
+                        <input type="text" id="first_name" className="bg-gray-100 placeholder:text-black text-lg md:rounded-s-lg block w-full p-2.5" placeholder="Enter email address..." required />
                          <button className='bg-blue-800 text-white text-lg font-bold py-4 px-8 hover:bg-white hover:text-black hover:border-2 hover:border-gray-200 border-2 border-white md:rounded-r-lg'>Join</button>
                     </div>
 

@@ -28,7 +28,7 @@ const WhyChooseUs = () => {
                                 )
                             })
                         }
-                        <DefaultButton name='Learn More' class='bg-[#050f4e] text-white px-8 py-4 transition duration-300 ease-in-out hover:scale-110' />
+                        <DefaultButton name='Learn More' className='bg-[#050f4e] text-white px-8 py-4 transition duration-300 ease-in-out hover:scale-110' />
                     </div>
                 </div>
             </div>

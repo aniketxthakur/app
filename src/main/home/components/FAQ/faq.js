@@ -49,7 +49,7 @@ function FaqComponent() {
                         )}
                     </div>
                 ))}
-                <DefaultButton name='Read More' class='transition duration-300 ease-in-out hover:scale-110 text-white bg-[#050f4e] py-4 px-8 text-xl font-normal' />
+                <DefaultButton name='Read More' className='transition duration-300 ease-in-out hover:scale-110 text-white bg-[#050f4e] py-4 px-8 text-xl font-normal' />
             </div>
         </div>
     );
