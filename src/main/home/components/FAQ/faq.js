@@ -22,7 +22,7 @@ function FaqComponent() {
     ];
 
     return (
-        <div className='md:px-24 px-5 '>
+        <div className='lg::px-24 px-5 '>
             <div className='text-center font-bold grid gap-8'>
                 <p className='text-3xl text-gray-400'>HAVE ANY QUESTION?</p>
                 <p className='md:text-5xl text-xl md:px-40 text-[#050f4e]'>Frequently Asked Questions</p>

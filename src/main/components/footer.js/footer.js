@@ -11,7 +11,7 @@ const Footer = () => {
         { name: 'Contact Us' }
     ]
     return (
-        <div id='contact' className='flex flex-wrap md:px-20  md:pt-28 pt-8 text-xl'>
+        <div id='contact' className='flex flex-wrap lg:px-20  md:pt-28 pt-8 text-xl'>
             <div className="w-1/2 lg:w-1/4">
                 <div className='m-5 grid gap-8'>
                     <img src={footerimg} alt="" />
