@@ -9,19 +9,19 @@ import DashboardRoute from './routes/dashboardRoute';
 
 function App() {
   return (
-       <BrowserRouter>
-        <Routes>
-          <Route element={<MainRoute />}>
-            <Route path='/' element={<Home />} />
-          </Route>
-          <Route element={<Authroute />}>
-            <Route path='/login' element={<Login />} />
-          </Route>
-          <Route element={<DashboardRoute />}>
-            <Route path='/dashboard' element={<Dashboard />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-   );
+    <BrowserRouter>
+      <Routes>
+        <Route element={<MainRoute />}>
+          <Route path='/' element={<Home />} />
+        </Route>
+        <Route element={<Authroute />}>
+          <Route path='/login' element={<Login />} />
+        </Route>
+        <Route element={<DashboardRoute />}>
+          <Route path='/dashboard' element={<Dashboard />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 export default App;

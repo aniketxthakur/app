@@ -15,7 +15,7 @@ const TestimonialSlider = () => {
   ]
 
   return (
-    <Carousel showArrows={false} autoPlay={false} interval={3000} showThumbs={false} infiniteLoop={true} stopOnHover={false} showStatus={false} showIndicators={true} className='md:w-auto w-96' centerMode={false} centerSlidePercentage={100} transitionTime={500} >
+    <Carousel showArrows={false} autoPlay={true} interval={3000} showThumbs={false} infiniteLoop={true} stopOnHover={false} showStatus={false} showIndicators={true} className='md:w-auto w-96' centerMode={false} centerSlidePercentage={100} transitionTime={500} >
       {data.map((data, id) => (
            <div key={id} className="md:grid block grid-cols-2 grid-flow-row">
             <div>

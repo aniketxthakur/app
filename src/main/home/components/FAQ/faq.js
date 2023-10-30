@@ -44,7 +44,8 @@ function FaqComponent() {
                         </div>
                         {openSection === section.id && (
                             <div className="font-light">
-                                <p className='ps-16 pt-8'>{section.content}</p>
+                                {/* selection:text-red-400 = change style of selecting text on website using selectiion:property*/}
+                                <p className='ps-16 pt-8 selection:text-blue-400 selection:bg-blue-100'>{section.content}</p>
                             </div>
                         )}
                     </div>
