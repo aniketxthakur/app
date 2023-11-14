@@ -9,6 +9,7 @@ import DashboardRoute from './routes/dashboardRoute';
 
 function App() {
   return (
+
     <BrowserRouter>
       <Routes>
         <Route element={<MainRoute />}>
